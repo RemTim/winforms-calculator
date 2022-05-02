@@ -15,7 +15,7 @@ namespace Calculator
 
         private void ResetStringInput() => _calculatorStringInput = "";
 
-        private void SetStringInputToNumberValueOne() => _calculatorStoredNumber = GetStringInputNumber();
+        private void StoreStringInput() => _calculatorStoredNumber = GetStringInputNumber();
 
         private decimal GetStringInputNumber() => Convert.ToDecimal(_calculatorStringInput);
 
@@ -101,7 +101,7 @@ namespace Calculator
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            SetStringInputToNumberValueOne();
+            StoreStringInput();
             _calcAction = Calculation.ADD;
             ResetStringInput();
         }
