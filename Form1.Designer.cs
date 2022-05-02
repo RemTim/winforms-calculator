@@ -40,6 +40,8 @@
             this.calculationResultBox = new System.Windows.Forms.TextBox();
             this.button0 = new System.Windows.Forms.Button();
             this.buttonPeriod = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonCalculate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -135,9 +137,9 @@
             // calculationResultBox
             // 
             this.calculationResultBox.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.calculationResultBox.Location = new System.Drawing.Point(12, 12);
+            this.calculationResultBox.Location = new System.Drawing.Point(381, 12);
             this.calculationResultBox.Name = "calculationResultBox";
-            this.calculationResultBox.Size = new System.Drawing.Size(776, 53);
+            this.calculationResultBox.Size = new System.Drawing.Size(407, 53);
             this.calculationResultBox.TabIndex = 10;
             this.calculationResultBox.Text = "CalculationResult";
             this.calculationResultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -162,11 +164,33 @@
             this.buttonPeriod.UseVisualStyleBackColor = true;
             this.buttonPeriod.Click += new System.EventHandler(this.buttonPeriod_Click);
             // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Location = new System.Drawing.Point(255, 115);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 156);
+            this.buttonAdd.TabIndex = 13;
+            this.buttonAdd.Text = "+";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
+            // buttonCalculate
+            // 
+            this.buttonCalculate.Location = new System.Drawing.Point(255, 277);
+            this.buttonCalculate.Name = "buttonCalculate";
+            this.buttonCalculate.Size = new System.Drawing.Size(75, 156);
+            this.buttonCalculate.TabIndex = 14;
+            this.buttonCalculate.Text = "=";
+            this.buttonCalculate.UseVisualStyleBackColor = true;
+            this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonCalculate);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonPeriod);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.calculationResultBox);
@@ -200,5 +224,7 @@
         private TextBox calculationResultBox;
         private Button button0;
         private Button buttonPeriod;
+        private Button buttonAdd;
+        private Button buttonCalculate;
     }
 }
