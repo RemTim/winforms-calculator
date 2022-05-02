@@ -1,0 +1,17 @@
+G:\C# Opdrachten\winforms-calculator\bin\Debug\net6.0-windows\Calculator.exe
+G:\C# Opdrachten\winforms-calculator\bin\Debug\net6.0-windows\Calculator.deps.json
+G:\C# Opdrachten\winforms-calculator\bin\Debug\net6.0-windows\Calculator.runtimeconfig.json
+G:\C# Opdrachten\winforms-calculator\bin\Debug\net6.0-windows\Calculator.dll
+G:\C# Opdrachten\winforms-calculator\bin\Debug\net6.0-windows\Calculator.pdb
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.csproj.AssemblyReference.cache
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.Form1.resources
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.csproj.GenerateResource.cache
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.AssemblyInfoInputs.cache
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.AssemblyInfo.cs
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.csproj.CoreCompileInputs.cache
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.dll
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\refint\Calculator.dll
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.pdb
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\Calculator.genruntimeconfig.cache
+G:\C# Opdrachten\winforms-calculator\obj\Debug\net6.0-windows\ref\Calculator.dll
