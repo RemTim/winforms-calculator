@@ -68,5 +68,20 @@ namespace Calculator
             _calculatorOutput = _calculatorOutput + button0.Text;
             calculationResultBox.Text = _calculatorOutput;
         }
+
+        private void buttonPeriod_Click(object sender, EventArgs e)
+        {
+            bool hasPeriod = false;
+
+            foreach (char c in _calculatorOutput)
+                if (c == '.')
+                    hasPeriod = true;
+
+            if (!hasPeriod)
+            {
+                _calculatorOutput = _calculatorOutput + buttonPeriod.Text;
+                calculationResultBox.Text = _calculatorOutput;
+            }
+        }
     }
 }

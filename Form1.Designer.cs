@@ -39,6 +39,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.calculationResultBox = new System.Windows.Forms.TextBox();
             this.button0 = new System.Windows.Forms.Button();
+            this.buttonPeriod = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -151,11 +152,22 @@
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.button0_Click);
             // 
+            // buttonPeriod
+            // 
+            this.buttonPeriod.Location = new System.Drawing.Point(174, 358);
+            this.buttonPeriod.Name = "buttonPeriod";
+            this.buttonPeriod.Size = new System.Drawing.Size(75, 75);
+            this.buttonPeriod.TabIndex = 12;
+            this.buttonPeriod.Text = ".";
+            this.buttonPeriod.UseVisualStyleBackColor = true;
+            this.buttonPeriod.Click += new System.EventHandler(this.buttonPeriod_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonPeriod);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.calculationResultBox);
             this.Controls.Add(this.button9);
@@ -187,5 +199,6 @@
         private Button button9;
         private TextBox calculationResultBox;
         private Button button0;
+        private Button buttonPeriod;
     }
 }
