@@ -9,6 +9,11 @@ namespace Calculator
             InitializeComponent();
         }
 
+        private void AppendToOutput(string text)
+        {
+            _calculatorOutput = _calculatorOutput + text;
+        }
+
         private void UpdateResultBox()
         {
             calculationResultBox.Text = _calculatorOutput;
@@ -16,61 +21,61 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button1.Text;
+            AppendToOutput(button1.Text);
             UpdateResultBox();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button2.Text;
+            AppendToOutput(button2.Text);
             UpdateResultBox();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button3.Text;
+            AppendToOutput(button3.Text);
             UpdateResultBox();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button4.Text;
+            AppendToOutput(button4.Text);
             UpdateResultBox();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button5.Text;
+            AppendToOutput(button5.Text);
             UpdateResultBox();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button6.Text;
+            AppendToOutput(button6.Text);
             UpdateResultBox();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button7.Text;
+            AppendToOutput(button7.Text);
             UpdateResultBox();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button8.Text;
+            AppendToOutput(button8.Text);
             UpdateResultBox();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button9.Text;
+            AppendToOutput(button9.Text);
             UpdateResultBox();
         }
 
         private void button0_Click(object sender, EventArgs e)
         {
-            _calculatorOutput = _calculatorOutput + button0.Text;
+            AppendToOutput(button0.Text);
             UpdateResultBox();
         }
 
@@ -84,7 +89,7 @@ namespace Calculator
 
             if (!hasPeriod)
             {
-                _calculatorOutput = _calculatorOutput + buttonPeriod.Text;
+                AppendToOutput(buttonPeriod.Text);
                 UpdateResultBox();
             }
         }
