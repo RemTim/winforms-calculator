@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0RugGPAIm3Fvy+GA4cjBC1B1hcxBDDSsBxGstZZORogh/mpp0KE3bKivDjNl1boGyEL39P107ASYCKr7n9v1BA==",
+  "dgSpecHash": "eiMJ8a0eTTzSZpPeX17LBXV1gcpxGjSMCtPWrQirr7+G3OfEVJ9vW+JU2zG13X3bZdBLHROMbVmJfdR/L4b42g==",
   "success": true,
-  "projectFilePath": "G:\\C# Opdrachten\\Calculator\\Calculator.csproj",
+  "projectFilePath": "G:\\C# Opdrachten\\winforms-calculator\\Calculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

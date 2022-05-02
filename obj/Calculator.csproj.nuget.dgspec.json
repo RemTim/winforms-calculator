@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\C# Opdrachten\\Calculator\\Calculator.csproj": {}
+    "G:\\C# Opdrachten\\winforms-calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "G:\\C# Opdrachten\\Calculator\\Calculator.csproj": {
+    "G:\\C# Opdrachten\\winforms-calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\C# Opdrachten\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "G:\\C# Opdrachten\\winforms-calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "G:\\C# Opdrachten\\Calculator\\Calculator.csproj",
+        "projectPath": "G:\\C# Opdrachten\\winforms-calculator\\Calculator.csproj",
         "packagesPath": "C:\\Users\\Remtim\\.nuget\\packages\\",
-        "outputPath": "G:\\C# Opdrachten\\Calculator\\obj\\",
+        "outputPath": "G:\\C# Opdrachten\\winforms-calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Remtim\\AppData\\Roaming\\NuGet\\NuGet.Config",
