@@ -149,6 +149,26 @@ namespace Calculator
             _calcAction = Calculation.ADD;
             ResetCalcBox();
         }
+        private void buttonSubtract_Click(object sender, EventArgs e)
+        {
+            _firstNumber = Convert.ToDecimal(calcBox.Text);
+            _calcAction = Calculation.SUBTRACT;
+            ResetCalcBox();
+        }
+
+        private void buttonMultiply_Click(object sender, EventArgs e)
+        {
+            _firstNumber = Convert.ToDecimal(calcBox.Text);
+            _calcAction = Calculation.MULTIPLY;
+            ResetCalcBox();
+        }
+
+        private void buttonDivide_Click(object sender, EventArgs e)
+        {
+            _firstNumber = Convert.ToDecimal(calcBox.Text);
+            _calcAction = Calculation.DIVIDE;
+            ResetCalcBox();
+        }
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
@@ -163,13 +183,20 @@ namespace Calculator
                     calcBox.Text = _result.ToString();
                     break;
                 case Calculation.SUBTRACT:
+                    _result = _firstNumber - _secondNumber;
+                    calcBox.Text = _result.ToString();
                     break;
                 case Calculation.MULTIPLY:
+                    _result = _firstNumber * _secondNumber;
+                    calcBox.Text = _result.ToString();
                     break;
                 case Calculation.DIVIDE:
+                    _result = _firstNumber / _secondNumber;
+                    calcBox.Text = _result.ToString();
                     break;
             }
 
+            _calcAction = Calculation.NONE;
             _firstNumber = _result;
         }
     }

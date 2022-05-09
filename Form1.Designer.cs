@@ -42,6 +42,9 @@
             this.buttonPeriod = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonCalculate = new System.Windows.Forms.Button();
+            this.buttonSubtract = new System.Windows.Forms.Button();
+            this.buttonMultiply = new System.Windows.Forms.Button();
+            this.buttonDivide = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -184,11 +187,44 @@
             this.buttonCalculate.UseVisualStyleBackColor = true;
             this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
             // 
+            // buttonSubtract
+            // 
+            this.buttonSubtract.Location = new System.Drawing.Point(255, 34);
+            this.buttonSubtract.Name = "buttonSubtract";
+            this.buttonSubtract.Size = new System.Drawing.Size(75, 75);
+            this.buttonSubtract.TabIndex = 15;
+            this.buttonSubtract.Text = "-";
+            this.buttonSubtract.UseVisualStyleBackColor = true;
+            this.buttonSubtract.Click += new System.EventHandler(this.buttonSubtract_Click);
+            // 
+            // buttonMultiply
+            // 
+            this.buttonMultiply.Location = new System.Drawing.Point(174, 34);
+            this.buttonMultiply.Name = "buttonMultiply";
+            this.buttonMultiply.Size = new System.Drawing.Size(75, 75);
+            this.buttonMultiply.TabIndex = 16;
+            this.buttonMultiply.Text = "*";
+            this.buttonMultiply.UseVisualStyleBackColor = true;
+            this.buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
+            // 
+            // buttonDivide
+            // 
+            this.buttonDivide.Location = new System.Drawing.Point(93, 34);
+            this.buttonDivide.Name = "buttonDivide";
+            this.buttonDivide.Size = new System.Drawing.Size(75, 75);
+            this.buttonDivide.TabIndex = 17;
+            this.buttonDivide.Text = "/";
+            this.buttonDivide.UseVisualStyleBackColor = true;
+            this.buttonDivide.Click += new System.EventHandler(this.buttonDivide_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonDivide);
+            this.Controls.Add(this.buttonMultiply);
+            this.Controls.Add(this.buttonSubtract);
             this.Controls.Add(this.buttonCalculate);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonPeriod);
@@ -226,5 +262,8 @@
         private Button buttonPeriod;
         private Button buttonAdd;
         private Button buttonCalculate;
+        private Button buttonSubtract;
+        private Button buttonMultiply;
+        private Button buttonDivide;
     }
 }
