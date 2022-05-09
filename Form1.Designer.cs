@@ -37,7 +37,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.calculationResultBox = new System.Windows.Forms.TextBox();
+            this.calcBox = new System.Windows.Forms.TextBox();
             this.button0 = new System.Windows.Forms.Button();
             this.buttonPeriod = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -134,15 +134,15 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // calculationResultBox
+            // calcBox
             // 
-            this.calculationResultBox.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.calculationResultBox.Location = new System.Drawing.Point(381, 12);
-            this.calculationResultBox.Name = "calculationResultBox";
-            this.calculationResultBox.Size = new System.Drawing.Size(407, 53);
-            this.calculationResultBox.TabIndex = 10;
-            this.calculationResultBox.Text = "calculationResultBox";
-            this.calculationResultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.calcBox.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.calcBox.Location = new System.Drawing.Point(381, 12);
+            this.calcBox.Name = "calcBox";
+            this.calcBox.Size = new System.Drawing.Size(407, 53);
+            this.calcBox.TabIndex = 10;
+            this.calcBox.Text = "calcBox";
+            this.calcBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button0
             // 
@@ -193,7 +193,7 @@
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonPeriod);
             this.Controls.Add(this.button0);
-            this.Controls.Add(this.calculationResultBox);
+            this.Controls.Add(this.calcBox);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -221,7 +221,7 @@
         private Button button7;
         private Button button8;
         private Button button9;
-        private TextBox calculationResultBox;
+        private TextBox calcBox;
         private Button button0;
         private Button buttonPeriod;
         private Button buttonAdd;
