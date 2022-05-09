@@ -3,118 +3,153 @@ namespace Calculator
     public partial class Form1 : Form
     {
         private Calculation _calcAction = Calculation.NONE;
-
-        private string _calculatorStringInput = "";
-
-        private decimal _calculatorStoredNumber = 0M;
+        private decimal _firstNumber = 0M;
+        private decimal _secondNumber = 0M;
         
         public Form1()
         {
             InitializeComponent();
+            ResetStringInput();
         }
 
-        private void ResetStringInput() => _calculatorStringInput = "";
-
-        private void StoreStringInput() => _calculatorStoredNumber = GetStringInputNumber();
-
-        private decimal GetStringInputNumber() => Convert.ToDecimal(_calculatorStringInput);
-
-        private void AppendToStringInput(string text) => _calculatorStringInput += text;
-
-        private void UpdateResultBox(string text) => calculationResultBox.Text = text;
+        private void ResetStringInput() => calculationResultBox.Text = "0";
         
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button1.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "1";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "1";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button2.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "2";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "2";
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button3.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "3";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "3";
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button4.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "4";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "4";
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button5.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "5";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "5";
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button6.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "6";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "6";
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button7.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "7";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "7";
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button8.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "8";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "8";
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button9.Text);
-            UpdateResultBox(_calculatorStringInput);
+            if (calculationResultBox.Text == "0" && calculationResultBox.Text != null)
+            {
+                calculationResultBox.Text = "9";
+            }
+            else
+            {
+                calculationResultBox.Text = calculationResultBox.Text + "9";
+            }
         }
 
         private void button0_Click(object sender, EventArgs e)
         {
-            AppendToStringInput(button0.Text);
-            UpdateResultBox(_calculatorStringInput);
+            calculationResultBox.Text = calculationResultBox.Text + "0";
         }
 
         private void buttonPeriod_Click(object sender, EventArgs e)
         {
             bool hasPeriod = false;
 
-            foreach (char c in _calculatorStringInput)
+            foreach (char c in calculationResultBox.Text)
                 if (c == '.')
                     hasPeriod = true;
 
             if (!hasPeriod)
             {
-                AppendToStringInput(buttonPeriod.Text);
-                UpdateResultBox(_calculatorStringInput);
+                calculationResultBox.Text = calculationResultBox.Text + ".";
             }
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            StoreStringInput();
             _calcAction = Calculation.ADD;
-            ResetStringInput();
         }
 
-        private void buttonCalculate_Click(object sender, EventArgs e)  // broken down mess
+        private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            decimal result = 0M;
-            if (_calcAction == Calculation.ADD)
-            {
-                result = _calculatorStoredNumber + Convert.ToDecimal(_calculatorStringInput);
-            }
-            calculationResultBox.Text = result.ToString();
-            ResetStringInput();
+
         }
     }
 

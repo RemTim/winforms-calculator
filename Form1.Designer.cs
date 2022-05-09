@@ -141,7 +141,7 @@
             this.calculationResultBox.Name = "calculationResultBox";
             this.calculationResultBox.Size = new System.Drawing.Size(407, 53);
             this.calculationResultBox.TabIndex = 10;
-            this.calculationResultBox.Text = "CalculationResult";
+            this.calculationResultBox.Text = "calculationResultBox";
             this.calculationResultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button0
