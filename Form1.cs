@@ -152,7 +152,25 @@ namespace Calculator
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
+            _secondNumber = Convert.ToDecimal(calcBox.Text);
 
+            switch (_calcAction)
+            {
+                case Calculation.NONE:
+                    break;
+                case Calculation.ADD:
+                    _result = _firstNumber + _secondNumber;
+                    calcBox.Text = _result.ToString();
+                    break;
+                case Calculation.SUBTRACT:
+                    break;
+                case Calculation.MULTIPLY:
+                    break;
+                case Calculation.DIVIDE:
+                    break;
+            }
+
+            _firstNumber = _result;
         }
     }
 
